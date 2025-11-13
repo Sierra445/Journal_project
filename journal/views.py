@@ -13,3 +13,6 @@ def home(request):
 
     entries = JournalEntry.objects.order_by('-date_created')
     return render(request, 'journal/home.html', {'form': form, 'entries': entries})
+
+def book_a_session(request):
+    
